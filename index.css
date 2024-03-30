@@ -1,0 +1,105 @@
+body {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    background-color: #19ABFF;
+}
+
+.banner {
+    width: 100vw;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.banner ul {
+    margin-top: 80px;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.banner ul li {
+    list-style-type: none;
+    height: 50px;
+    background-color: white;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 20px 0 0 20px;
+    cursor: pointer;
+}
+
+.banner ul li:hover {
+    background-color: #EEEEEE;
+}
+
+.rels {
+    padding: 20px;
+    background-color: #f7cf37;
+}
+
+.rels-map {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.map-item {
+    margin: auto;
+}
+
+.map-item img {
+    border-radius: 50%;
+}
+
+.map-center img {
+    width: 350px;
+    height: 350px;
+}
+
+.map-left {
+    display: grid;
+    grid-template-rows: auto auto; 
+    gap: 20px;
+}
+
+.map-left-top img {
+    width: 200px;
+    height: 200px;
+}
+
+.map-left-bottom img {
+    width: 250px;
+    height: 250px;
+    margin-left: 100px;
+}
+
+.map-right {
+    display: grid;
+    grid-template-rows: auto auto; 
+    gap: 20px;
+}
+
+.map-right-top img {
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+}
+
+.map-right-bottom img {
+    width: 250px;
+    height: 250px;
+}
