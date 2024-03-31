@@ -1,6 +1,7 @@
 body {
     width: 100%;
     height: auto;
+    overflow-x: hidden;
     top: 0;
     left: 0;
     padding: 0;
@@ -11,6 +12,10 @@ body {
     background-color: #19ABFF;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 .banner {
     width: 100vw;
     height: 500px;
@@ -19,7 +24,7 @@ body {
 }
 
 .banner ul {
-    margin-top: 80px;
+    margin-top: 170px;
     font-family: "Edu NSW ACT Foundation", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -52,6 +57,7 @@ body {
     width: 80%;
     height: 100%;
     margin: auto;
+    margin-top: 50px;
     display: grid;
     gap: 10px;
     grid-template-columns: 30% 40% 30%;
@@ -63,6 +69,10 @@ body {
 
 .map-item img {
     border-radius: 50%;
+}
+
+.map-item img:hover {
+    opacity: 0.8;
 }
 
 .map-center img {
@@ -102,4 +112,561 @@ body {
 .map-right-bottom img {
     width: 250px;
     height: 250px;
+}
+
+.shizuka-hidden {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: -100px;
+    left: 183px;
+}
+
+.shizuka-rel-line {
+    height: 1px;
+    background-color: white;
+    width: 300px;
+}
+
+.shizuka-rel {
+    width: 80px;
+    height: auto;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    color: white;
+}
+
+.doraemon-hidden {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: -200px;
+    left: 350px;
+}
+
+.doraemon-rel-line {
+    height: 1px;
+    background-color: white;
+    width: 250px;
+}
+
+.doraemon-rel {
+    width: 80px;
+    height: auto;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    color: white;
+}
+
+.suneo-hidden {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: -120px;
+    right: 190px;
+}
+
+.suneo-rel-line {
+    height: 1px;
+    background-color: white;
+    width: 300px;
+}
+
+.suneo-rel {
+    width: 80px;
+    height: auto;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    color: white;
+}
+
+.goda-hidden {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: -200px;
+    right: 250px;
+}
+
+.goda-rel-line {
+    height: 1px;
+    background-color: white;
+    width: 250px;
+}
+
+.goda-rel {
+    width: 80px;
+    height: auto;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    color: white;
+}
+
+.mobile-menu {
+    width: 500px;
+    height: 100px;
+    top: 395px;
+    position: absolute;
+}
+
+.mobile-menu ul li {
+    display: inline;
+    list-style-type: none;
+    height: auto;
+    width: auto;
+    background-color: #EEEEEE;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+
+.nobi-intro {
+    grid-area: "nobi";
+    display: flex;
+    background-color: #0d5fda;
+}
+
+.shizuka-intro {
+    grid-area: "shizuka";
+    display: flex;
+    background-color: rgb(243, 136, 154);
+}
+
+.doraemon-intro {
+    grid-area: "doraemon";
+    display: flex;
+    background-color: rgb(8, 197, 8);
+}
+
+.suneo-intro {
+    grid-area: "suneo";
+    display: flex;
+    background-color: #8c1ce7;
+}
+
+.goda-intro {
+    grid-area: "goda";
+    display: flex;
+    background-color: #f1ad2f;
+}
+
+.dorami-intro {
+    grid-area: "dorami";
+    display: flex;
+    background-color: #d61776;
+}
+
+.intro {
+    width: 100vw;
+    height: auto;
+    color: white;
+    margin-top: 186px;
+    display: grid;
+    grid-template-areas: 
+        'nobi shizuka'
+        'doraemon dorami'
+        'suneo goda';
+}
+
+.intro-row {
+    padding: 20px;
+}
+
+.intro img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.profile {
+    margin-left: 60px;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-size: 25px;
+}
+
+.profile p {
+    line-height: 10px;
+}
+
+.nobi-room {
+    width: 100%;
+    height: 560px;
+    background: url("./nobi-room.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+}
+
+.nobi-room:hover {
+    background: url("./group.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quote {
+    width: 500px;
+    height: 350px;
+    background: black;
+    opacity: 0.8;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+.quote h1 {
+    font-size: 50px;
+}
+
+.quote p {
+    font-size: 30px;
+}
+
+.tv-section {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.tv-section img {
+    width: 50%;
+    height: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tv-section iframe {
+    width: 49%;
+    height: 520px;
+    position: absolute;
+    left: 697px;
+    margin-top: 57px;
+}
+
+li a {
+    text-decoration: none;
+    color: black
+}
+
+@media only screen and (max-width: 1920px) {
+    .banner ul {
+        margin-top: 120px;
+    }
+
+    .banner ul li {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .rels-map {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .map-center img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .map-left-top img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .map-left-bottom img {
+        width: 150px;
+        height: 150px;
+        margin-left: 50px;
+    }
+
+    .map-right-top img {
+        width: 150px;
+        height: 150px;
+        margin-left: 50px;
+    }
+    
+    .map-right-bottom img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .shizuka-hidden {
+        width: auto;
+        height: auto;
+        position: relative;
+        top: -100px;
+        left: 145px;
+    }
+    
+    .shizuka-rel-line {
+        height: 1px;
+        background-color: white;
+        width: 200px;
+    }
+
+    .shizuka-rel {
+        width: 60px;
+        height: auto;
+        padding: 8px;
+        background-color: black;
+        border-radius: 10px;
+        text-align: center;
+        margin: auto;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        opacity: 0.9;
+        color: white;
+    }
+
+    .doraemon-hidden {
+        width: auto;
+        height: auto;
+        position: relative;
+        top: -150px;
+        left: 200px;
+    }
+    
+    .doraemon-rel-line {
+        height: 1px;
+        background-color: white;
+        width: 150px;
+    }
+    
+    .doraemon-rel {
+        width: 60px;
+        height: auto;
+        padding: 10px;
+        background-color: black;
+        border-radius: 10px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        opacity: 0.9;
+        color: white;
+    }
+
+    .suneo-hidden {
+        width: auto;
+        height: auto;
+        position: relative;
+        top: -100px;
+        right: 140px;
+    }
+    
+    .suneo-rel-line {
+        height: 1px;
+        background-color: white;
+        width: 200px;
+    }
+    
+    .suneo-rel {
+        width: 60px;
+        height: auto;
+        padding: 10px;
+        background-color: black;
+        border-radius: 10px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-right: 100px;
+        opacity: 0.9;
+        color: white;
+    }
+
+    .goda-hidden {
+        width: auto;
+        height: auto;
+        position: relative;
+        top: -150px;
+        right: 150px;
+    }
+    
+    .goda-rel-line {
+        height: 1px;
+        background-color: white;
+        width: 150px;
+    }
+    
+    .goda-rel {
+        width: 60px;
+        height: auto;
+        padding: 10px;
+        background-color: black;
+        border-radius: 10px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+        opacity: 0.9;
+        color: white;
+    }
+
+    .intro {
+        margin-top: 35px;
+    }
+
+    .tv-section iframe {
+        width: 49%;
+        height: 520px;
+        position: absolute;
+        left: 540px;
+        margin-top: 57px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .tv-section iframe {
+        width: 49%;
+        height: 520px;
+        position: absolute;
+        left: 435px;
+        margin-top: 57px;
+    }
+
+    .profile {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .tv-section iframe {
+        width: 49%;
+        height: 520px;
+        position: absolute;
+        left: 380px;
+        margin-top: 57px;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .banner {
+        width: 100%;
+        height: 350px;
+        display: inline;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-left: 18%;
+        margin-top: -35px;
+    }
+
+    .rels-map {
+        height: 320px;
+        margin-top: 0;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .rel-line {
+        display: none;
+    }
+    
+    .map-left-top img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .map-right-top img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .map-left-bottom img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .map-right-bottom img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .map-center img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .lt-rel-label {
+        margin-left: -15px;
+        margin-top: -30px;
+    }
+
+    .lb-rel-label {
+        margin-left: -55px;
+        margin-top: -10px;
+    }
+
+    .rt-rel-label {
+        margin-right: -15px;
+        margin-top: -30px;
+    }
+
+    .rb-rel-label {
+        margin-right: -15px;
+        margin-top: -20px;
+    }
+
+    .intro {
+        width: 100vw;
+        height: auto;
+        color: white;
+        margin-top: 0px;
+        display: grid;
+        grid-template-areas: 
+            'nobi' 
+            'shizuka'
+            'doraemon' 
+            'dorami'
+            'suneo'
+            'goda';
+    }
+
+    .profile {
+        font-size: 20px;
+    }
+
+    .tv-section img {
+        width: 80%;
+    }
+
+    .tv-section iframe {
+        width: 78%;
+        height: 520px;
+        position: absolute;
+        left: 130px;
+        margin-top: 57px;
+    }
 }

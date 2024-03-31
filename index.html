@@ -10,13 +10,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="banner">
+        <div class="banner" id="banner">
             <div class="menu">
                 <ul>
-                    <li>Intro</li>
-                    <li>Bios</li>                  
-                    <li>Anywhere Door</li>                  
-                    <li>My TV</li>                  
+                    <li><a href="#banner">Intro</a></li>
+                    <li><a href="#intro">Bios</a></li>                  
+                    <li><a href="#quote">Quote</a></li>                  
+                    <li><a href="#tv">My TV</a></li>                  
                 </ul>
             </div>
 
@@ -24,25 +24,125 @@
                 <div class="rels-map">
                     <div class="map-item map-left">
                         <div class="map-left-top">
-                            <img src="./jingxiang.jpg" alt="Nobi Nobita" />
+                            <img src="./jingxiang.jpg" alt="Shizuka Minamoto" />
+                            <div class="shizuka-hidden">
+                                <div class="shizuka-rel lt-rel-label">Friend</div>
+                                <div class="shizuka-rel-line rel-line"></div>
+                            </div>
                         </div>
                         <div class="map-left-bottom">
                             <img src="./doraemon.jpg" alt="Doraemon" />
+                            <div class="doraemon-hidden">
+                                <div class="doraemon-rel lb-rel-label">Friend</div>
+                                <div class="doraemon-rel-line rel-line"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="map-item map-center">
-                        <img src="./daxiong.jpg" alt="Shizuka Minamoto" />
+                        <img src="./daxiong.jpg" alt="Nobi Nobita" />
                     </div>
                     <div class="map-item map-right">
                         <div class="map-right-top">
                             <img src="./xiaofu.jpg" alt="Suneo Honekawa" />
+                            <div class="suneo-hidden">
+                                <div class="suneo-rel rt-rel-label">Friend</div>
+                                <div class="suneo-rel-line rel-line"></div>
+                            </div>
                         </div>
                         <div class="map-right-bottom">
                             <img src="./panghu.jpg" alt="Takeshi Goda" />
+                            <div class="goda-hidden">
+                                <div class="goda-rel rb-rel-label">Friend</div>
+                                <div class="goda-rel-line rel-line"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#banner">Intro</a></li>
+                <li><a href="#intro">Bios</a></li>                  
+                <li><a href="#quote">Quote</a></li>                  
+                <li><a href="#tv">My TV</a></li>                
+            </ul>
+        </div>
+
+        <div class="intro" #intro>
+            <div class="nobi-intro intro-row">
+                <img src="./daxiong.jpg" alt="Nobi Nobita" />
+                <div class="profile">
+                    <p><strong>Name:</strong> Nobi Nobita</p>
+                    <p><strong>Age:</strong> 10</p>
+                    <p><strong>Gener:</strong> M</p>
+                    <p><strong>Characterizations:</strong> Lazy, Clumsy, Childish, Cowardly</p>
+                    <p><strong>Hobits:</strong> Napping</p>
+                </div>
+            </div>
+            <div class="shizuka-intro intro-row">
+                <img src="./jingxiang.jpg" alt="Shizuka Minamoto" />
+                <div class="profile">
+                    <p><strong>Name:</strong> Shizuka Minamoto</p>
+                    <p><strong>Age:</strong> 10</p>
+                    <p><strong>Gener:</strong> F</p>
+                    <p><strong>Characterizations:</strong> Kind, Lovely, Smart, Caring</p>
+                    <p><strong>Hobits:</strong> Bathing</p>
+                </div>
+            </div>
+            <div class="doraemon-intro intro-row">
+                <img src="./doraemon.jpg" alt="Doraemon" />
+                <div class="profile">
+                    <p><strong>Name:</strong> Doraemon</p>
+                    <p><strong>Age:</strong> TBD</p>
+                    <p><strong>Gener:</strong> M</p>
+                    <p><strong>Characterizations:</strong> Patient, Ethusiastic, Kind</p>
+                    <p><strong>Hobits:</strong> Eating Fudgy Pudgy Pie</p>
+                </div>
+            </div>
+            <div class="dorami-intro intro-row">
+                <img src="./dorami.jpg" alt="Dorami" />
+                <div class="profile">
+                    <p><strong>Name:</strong> Dorami</p>
+                    <p><strong>Age:</strong> TBD</p>
+                    <p><strong>Gener:</strong> F</p>
+                    <p><strong>Characterizations:</strong> Optimistic, Responsible, Perfectionistic</p>
+                    <p><strong>Hobits:</strong> Making hairdo</p>
+                </div>
+            </div>
+            <div class="suneo-intro intro-row">
+                <img src="./xiaofu.jpg" alt="Suneo Honekawa" />
+                <div class="profile">
+                    <p><strong>Name:</strong> Suneo Honekawa</p>
+                    <p><strong>Age:</strong> 10</p>
+                    <p><strong>Gener:</strong> M</p>
+                    <p><strong>Characterizations:</strong> Smarty, Selfish, Coward</p>
+                    <p><strong>Hobits:</strong> Flaunting Material Wealthy</p>
+                </div>
+            </div>
+            <div class="goda-intro intro-row">
+                <img src="./panghu.jpg" alt="Takeshi Goda" />
+                <div class="profile">
+                    <p><strong>Name:</strong> Takeshi Goda</p>
+                    <p><strong>Age:</strong> 10</p>
+                    <p><strong>Gener:</strong> M</p>
+                    <p><strong>Characterizations:</strong> Impulsive, Strong, Sporty</p>
+                    <p><strong>Hobits:</strong> Bully Nobi and Sing</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nobi-room" id="quote">
+            <div class="quote">
+                <h1>Things are never quite as scary when you've got a best friend.</h1>
+                <p>Bill Waterson</p>
+            </div>
+        </div>
+
+        <div class="tv-section" id="tv">
+            <img src="./tv.png" alt="TV" />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yDrWy4ruibI?si=iBxPlA_4vD2CAp-e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </body>
 </html>
