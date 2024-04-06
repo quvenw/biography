@@ -353,22 +353,27 @@ body {
     width: 100%;
     height: auto;
     padding: 50px;
+    padding-bottom: 100px;
     text-align: center;
-}
-
-.tv-section img {
-    width: 50%;
-    height: 600px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    background-color: #0d5fda;
 }
 
 .tv-section iframe {
     width: 49%;
     height: 520px;
-    position: absolute;
-    left: 697px;
-    margin-top: 57px;
+    margin: auto;
+    margin-top: 60px;
+    margin-left: -100px;
+    border-radius: 20px;
+}
+
+.tv-description {
+    width: 30%;
+    height: auto;
+    color: white;
+    font-size: 30px;
+    margin: auto;
+    padding-right: 100px;
 }
 
 li a {
@@ -534,35 +539,40 @@ li a {
     }
 
     .tv-section iframe {
-        width: 49%;
+        width: 50%;
         height: 520px;
-        position: absolute;
-        left: 540px;
-        margin-top: 57px;
     }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1550px) {
     .tv-section iframe {
-        width: 49%;
+        width: 65%;
         height: 520px;
-        position: absolute;
-        left: 435px;
-        margin-top: 57px;
+    }
+
+    .tv-description {
+        width: 60%;
+        height: auto;
     }
 
     .profile {
         font-size: 20px;
     }
+
+    .profile p {
+        line-height: 30px;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
+    .tv-description {
+        width: 65%;
+        height: auto;
+    }
+
     .tv-section iframe {
-        width: 49%;
+        width: 70%;
         height: 520px;
-        position: absolute;
-        left: 380px;
-        margin-top: 57px;
     }
 }
 
@@ -658,15 +668,13 @@ li a {
         font-size: 20px;
     }
 
-    .tv-section img {
-        width: 80%;
-    }
-
     .tv-section iframe {
         width: 78%;
         height: 520px;
-        position: absolute;
-        left: 130px;
-        margin-top: 57px;
+    }
+
+    .tv-description {
+        width: 90%;
+        height: auto;
     }
 }
